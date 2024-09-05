@@ -1,7 +1,8 @@
 ## Hi there, i'm Julia 👋
 
-- 🌺 Estudando engenharia de software
-- 💬 Aprendendo python
+- 👾 Formada em Técnico de Infomática
+- 🌺 Estudando Engenharia de Software
+- 
 
 <div>
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=juliaszventura&show_icons=true&theme=cobalt"/>
