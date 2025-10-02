@@ -1,0 +1,267 @@
+Tarefa 1:
+import java.util.*;
+
+public class App {
+
+    public static void ordenarPedidos(Pedido[] pedidos) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Menu de seleção de algoritmo de ordenação
+        System.out.println("Escolha o algoritmo de ordenação:");
+        System.out.println("1. Bolha");
+        System.out.println("2. Seleção");
+        System.out.println("3. Inserção");
+        System.out.println("4. Mergesort");
+        System.out.println("5. Heapsort");
+        int algoritmo = scanner.nextInt();
+
+        // Menu de seleção de critério de ordenação
+        System.out.println("Escolha o critério de ordenação:");
+        System.out.println("1. Por Código");
+        System.out.println("2. Por Data");
+        System.out.println("3. Por Valor");
+        int criterio = scanner.nextInt();
+
+        // Criação do comparador com base no critério escolhido
+        Comparator<Pedido> comparador = null;
+        switch (criterio) {
+            case 1:
+                comparador = new ComparadorPorCodigo();
+                break;
+            case 2:
+                comparador = new ComparadorPorData();
+                break;
+            case 3:
+                comparador = new ComparadorPorValor();
+                break;
+            default:
+                System.out.println("Critério inválido");
+                return;
+        }
+
+        // Escolha do algoritmo de ordenação
+        switch (algoritmo) {
+            case 1:
+                bolha(pedidos, comparador);
+                break;
+            case 2:
+                selecao(pedidos, comparador);
+                break;
+            case 3:
+                insercao(pedidos, comparador);
+                break;
+            case 4:
+                mergesort(pedidos, comparador);
+                break;
+            case 5:
+                heapsort(pedidos, comparador);
+                break;
+            default:
+                System.out.println("Algoritmo inválido");
+        }
+    }
+
+    // Algoritmo de ordenação Bolha
+    public static void bolha(Pedido[] pedidos, Comparator<Pedido> comparador) {
+        long inicio = System.currentTimeMillis();
+        for (int i = 0; i < pedidos.length - 1; i++) {
+            for (int j = 0; j < pedidos.length - i - 1; j++) {
+                if (comparador.compare(pedidos[j], pedidos[j + 1]) > 0) {
+                    Pedido temp = pedidos[j];
+                    pedidos[j] = pedidos[j + 1];
+                    pedidos[j + 1] = temp;
+                }
+            }
+        }
+        long fim = System.currentTimeMillis();
+        System.out.println("Tempo de ordenação (Bolha): " + (fim - inicio) + " ms");
+    }
+
+    // Algoritmo de ordenação Seleção
+    public static void selecao(Pedido[] pedidos, Comparator<Pedido> comparador) {
+        long inicio = System.currentTimeMillis();
+        for (int i = 0; i < pedidos.length - 1; i++) {
+            int minIdx = i;
+            for (int j = i + 1; j < pedidos.length; j++) {
+                if (comparador.compare(pedidos[j], pedidos[minIdx]) < 0) {
+                    minIdx = j;
+                }
+            }
+            Pedido temp = pedidos[minIdx];
+            pedidos[minIdx] = pedidos[i];
+            pedidos[i] = temp;
+        }
+        long fim = System.currentTimeMillis();
+        System.out.println("Tempo de ordenação (Seleção): " + (fim - inicio) + " ms");
+    }
+
+    // Algoritmo de ordenação Inserção
+    public static void insercao(Pedido[] pedidos, Comparator<Pedido> comparador) {
+        long inicio = System.currentTimeMillis();
+        for (int i = 1; i < pedidos.length; i++) {
+            Pedido chave = pedidos[i];
+            int j = i - 1;
+            while (j >= 0 && comparador.compare(pedidos[j], chave) > 0) {
+                pedidos[j + 1] = pedidos[j];
+                j = j - 1;
+            }
+            pedidos[j + 1] = chave;
+        }
+        long fim = System.currentTimeMillis();
+        System.out.println("Tempo de ordenação (Inserção): " + (fim - inicio) + " ms");
+    }
+
+    // Algoritmo de ordenação Mergesort
+    public static void mergesort(Pedido[] pedidos, Comparator<Pedido> comparador) {
+        long inicio = System.currentTimeMillis();
+        mergeSort(pedidos, 0, pedidos.length - 1, comparador);
+        long fim = System.currentTimeMillis();
+        System.out.println("Tempo de ordenação (Mergesort): " + (fim - inicio) + " ms");
+    }
+
+    public static void mergeSort(Pedido[] pedidos, int inicio, int fim, Comparator<Pedido> comparador) {
+        if (inicio < fim) {
+            int meio = (inicio + fim) / 2;
+            mergeSort(pedidos, inicio, meio, comparador);
+            mergeSort(pedidos, meio + 1, fim, comparador);
+            merge(pedidos, inicio, meio, fim, comparador);
+        }
+    }
+
+    public static void merge(Pedido[] pedidos, int inicio, int meio, int fim, Comparator<Pedido> comparador) {
+        Pedido[] temp = new Pedido[fim - inicio + 1];
+        int i = inicio, j = meio + 1, k = 0;
+
+        while (i <= meio && j <= fim) {
+            if (comparador.compare(pedidos[i], pedidos[j]) <= 0) {
+                temp[k++] = pedidos[i++];
+            } else {
+                temp[k++] = pedidos[j++];
+            }
+        }
+
+        while (i <= meio) {
+            temp[k++] = pedidos[i++];
+        }
+
+        while (j <= fim) {
+            temp[k++] = pedidos[j++];
+        }
+
+        System.arraycopy(temp, 0, pedidos, inicio, temp.length);
+    }
+
+    // Algoritmo de ordenação Heapsort
+    public static void heapsort(Pedido[] pedidos, Comparator<Pedido> comparador) {
+        long inicio = System.currentTimeMillis();
+        int n = pedidos.length;
+        for (int i = n / 2 - 1; i >= 0; i--) {
+            heapify(pedidos, n, i, comparador);
+        }
+        for (int i = n - 1; i > 0; i--) {
+            Pedido temp = pedidos[0];
+            pedidos[0] = pedidos[i];
+            pedidos[i] = temp;
+            heapify(pedidos, i, 0, comparador);
+        }
+        long fim = System.currentTimeMillis();
+        System.out.println("Tempo de ordenação (Heapsort): " + (fim - inicio) + " ms");
+    }
+
+    public static void heapify(Pedido[] pedidos, int n, int i, Comparator<Pedido> comparador) {
+        int maior = i;
+        int esquerda = 2 * i + 1;
+        int direita = 2 * i + 2;
+
+        if (esquerda < n && comparador.compare(pedidos[esquerda], pedidos[maior]) > 0) {
+            maior = esquerda;
+        }
+
+        if (direita < n && comparador.compare(pedidos[direita], pedidos[maior]) > 0) {
+            maior = direita;
+        }
+
+        if (maior != i) {
+            Pedido temp = pedidos[i];
+            pedidos[i] = pedidos[maior];
+            pedidos[maior] = temp;
+            heapify(pedidos, n, maior, comparador);
+        }
+    }
+}
+
+
+
+
+
+import java.util.Comparator;
+
+class ComparadorPorCodigo implements Comparator<Pedido> {
+    public int compare(Pedido p1, Pedido p2) {
+        return Integer.compare(p1.getCodigo(), p2.getCodigo());
+    }
+}
+
+class ComparadorPorData implements Comparator<Pedido> {
+    public int compare(Pedido p1, Pedido p2) {
+        int compareDate = p1.getData().compareTo(p2.getData());
+        if (compareDate != 0) {
+            return compareDate;
+        }
+        return Integer.compare(p1.getCodigo(), p2.getCodigo());
+    }
+}
+
+class ComparadorPorValor implements Comparator<Pedido> {
+    public int compare(Pedido p1, Pedido p2) {
+        double valor1 = p1.getValorTotal();
+        double valor2 = p2.getValorTotal();
+        
+        int compareValor = Double.compare(valor1, valor2);
+        if (compareValor != 0) {
+            return compareValor;
+        }
+        
+        int compareQuantidade = Integer.compare(p1.getQuantidadeProdutos(), p2.getQuantidadeProdutos());
+        if (compareQuantidade != 0) {
+            return compareQuantidade;
+        }
+        
+        return Integer.compare(p1.getCodigo(), p2.getCodigo());
+    }
+}
+
+Tarefa 2:
+import java.util.*;
+
+public class App {
+    public static void localizarPedidosPorData(Pedido[] pedidos) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Receber data do usuário
+        System.out.println("Digite a data (formato: dd/MM/yyyy):");
+        String data = scanner.nextLine();
+
+        // Criar uma cópia do vetor de pedidos ordenada por data
+        Pedido[] pedidosOrdenadosPorData = Arrays.copyOf(pedidos, pedidos.length);
+        Arrays.sort(pedidosOrdenadosPorData, new ComparadorPorData());
+
+        // Buscar os pedidos na cópia ordenada
+        List<Pedido> pedidosEncontrados = new ArrayList<>();
+        for (Pedido pedido : pedidosOrdenadosPorData) {
+            if (pedido.getData().equals(data)) {
+                pedidosEncontrados.add(pedido);
+            }
+        }
+
+        // Exibir os resultados
+        if (!pedidosEncontrados.isEmpty()) {
+            System.out.println("Pedidos encontrados para a data " + data + ":");
+            for (Pedido pedido : pedidosEncontrados) {
+                System.out.println(pedido);
+            }
+        } else {
+            System.out.println("Nenhum pedido encontrado para essa data.");
+        }
+    }
+}
