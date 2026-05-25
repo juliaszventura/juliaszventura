@@ -85,7 +85,7 @@ Atualmente aprofundando conhecimentos em **Análise de Dados**, **Business Intel
 ## 🎓 Formação & Cursos
  
 - 🎓 **Bacharelado em Engenharia de Software** — PUC Minas *(2024–2028, em andamento)*
-- 💻 **Técnico em Informática** — POLIMIG *2018–2020, concluído)*
+- 💻 **Técnico em Informática** — POLIMIG *(2018–2020, concluído)*
 - 🌎 **Language Exchange International** — Florida, USA *(Mar/2023 – Mai/2024)*
 - 🐧 **[Red Hat System Administration I (RH124 - RHA) Ver. 9.3](https://www.credly.com/badges/c847191f-aa2c-45d4-ae2c-e1e6946ff314)** — Red Hat *(Out/2025)*
 - ☁️ **[AWS Academy Graduate — Cloud Foundations](https://www.credly.com/badges/2969191c-c539-4557-b5c9-d79acee15d71/print)** — Amazon Web Services *(Ago/2025)*
