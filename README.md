@@ -40,9 +40,29 @@ Atualmente aprofundando conhecimentos em **Análise de Dados**, **Business Intel
 
 ## 🛠️ Tech Stack
 
-<div style="display: inline_block"><br>
-  <img align="center" src="https://skillicons.dev/icons?i=html,css,vscode,github,figma,python"> 
-  <img align="right" alt="Ju-gif" height="180" width="180" src="https://private-user-images.githubusercontent.com/74038190/240885248-ff1b5f32-9420-4dde-b2b9-ed2c0aa17459.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjM3Njk5MzUsIm5iZiI6MTcyMzc2OTYzNSwicGF0aCI6Ii83NDAzODE5MC8yNDA4ODUyNDgtZmYxYjVmMzItOTQyMC00ZGRlLWIyYjktZWQyYzBhYTE3NDU5LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODE2VDAwNTM1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFmNDlmNDAwODE1NGQ1MzdlMTY2YjI2ZWNmYWYwNjE5M2M5Nzg0NWRmMmY2YTAxMzQyNDZiZmNhYTg2Njg3YjYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.obY8KN8u7D7ZwbInS_opF4ugOphE45-LGd7mOO0Q9AE">
+<div align="center">
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <b>🎨 Frontend</b><br><br>
+      <img src="https://skillicons.dev/icons?i=html,css,js,react,typescript">
+    </td>
+    <td align="center" width="50%">
+      <b>⚙️ Backend & Automação</b><br><br>
+      <img src="https://skillicons.dev/icons?i=python,java,spring,c">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>🗄️ Dados</b><br><br>
+      <img src="https://skillicons.dev/icons?i=mysql">
+    </td>
+    <td align="center">
+      <b>🛠️ Ferramentas</b><br><br>
+      <img src="https://skillicons.dev/icons?i=vscode,git,github,figma,linux">
+    </td>
+  </tr>
+</table>
 </div>
 
 ---
@@ -75,6 +95,6 @@ Atualmente aprofundando conhecimentos em **Análise de Dados**, **Business Intel
 ## 📊 Stats
  
 <div align="center">
-  <img height="160" src="https://github-readme-stats.shion.dev/api?username=juliaszventura&hide_title=false&show_icons=true&include_all_commits=true&count_private=true&theme=midnight-purple&locale=en&hide_border=true&custom_title=Stats" />
-  <img height="160" src="https://github-readme-stats.shion.dev/api/top-langs?username=juliaszventura&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=6&theme=midnight-purple&hide_border=true" />
+  <img height="160" src="https://github-readme-stats.shion.dev/api?username=juliaszventura&hide_title=false&show_icons=true&include_all_commits=true&count_private=true&theme=midnight-purple&locale=en&hide_border=true&custom_title=Stats&title_color=E91E8C&icon_color=E91E8C" />
+  <img height="160" src="https://github-readme-stats.shion.dev/api/top-langs?username=juliaszventura&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=6&theme=midnight-purple&hide_border=true&include_forked_repos=true&title_color=E91E8C" />
 </div>
