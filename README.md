@@ -17,7 +17,7 @@
 
 ---
 
-## 👩‍💻 Sobre mim
+## 👩🏻‍💻 Sobre mim
  
 Sou Júlia, **estudante de Engenharia de Software na PUC Minas**, com experiência prática em banco de dados, consultas SQL e automação com Python.
 Gosto de todo o ciclo do dado: limpar e estruturar informações, escrever queries que fazem sentido, automatizar processos repetitivos e transformar dados brutos em algo útil. Já atuei em diferentes contextos — de estágios com banco de dados a suporte técnico com SQL — e estou sempre buscando evoluir.
