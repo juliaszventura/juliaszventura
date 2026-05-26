@@ -32,7 +32,7 @@ Atualmente aprofundando conhecimentos em **Análise de Dados**, **Business Intel
  
 - 📊 **Estagiária de Banco de Dados na VT Real** — SQL, automação com Python e integridade de dados
 - 📚 Cursando **Engenharia de Software** na PUC Minas *(2024–2028)*
-- 🤖 Fazendo o curso de **Análise de Dados & IA Generativa** da Santander Academy
+- 🤖 Fazendo o curso da **Google Cloud Data Analytics** da Google Skills
 - 🧠 Explorando o caminho em **Engenharia de Dados**, **BI** e **IA**
 - 🛠️ Desenvolvendo meu portfólio com projetos que conectam dados, automação e problemas reais
 
@@ -89,7 +89,7 @@ Atualmente aprofundando conhecimentos em **Análise de Dados**, **Business Intel
 - 🌎 **Language Exchange International** — Florida, USA *(Mar/2023 – Mai/2024)*
 - 🐧 **[Red Hat System Administration I (RH124 - RHA) Ver. 9.3](https://www.credly.com/badges/c847191f-aa2c-45d4-ae2c-e1e6946ff314)** — Red Hat *(Out/2025)*
 - ☁️ **[AWS Academy Graduate — Cloud Foundations](https://www.credly.com/badges/2969191c-c539-4557-b5c9-d79acee15d71/print)** — Amazon Web Services *(Ago/2025)*
-- 🤖 **Análise de Dados & IA Generativa — Nivelamento** — Santander Academy *(em andamento)*
+- 🤖 **Google Cloud Data Analytics** — Google Skills *(em andamento)*
 ---
 
 ## 📊 Stats
