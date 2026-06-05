@@ -28,16 +28,6 @@ Atualmente aprofundando conhecimentos em **Análise de Dados**, **Business Intel
 
 ---
 
-## 🔭 Atualmente
- 
-- 📊 **Estagiária de Banco de Dados na VT Real** — SQL, automação com Python e integridade de dados
-- 📚 Cursando **Engenharia de Software** na PUC Minas *(2024–2028)*
-- 🤖 Fazendo o curso **Google Cloud Data Analytics** da Google Skills
-- 🧠 Explorando o caminho em **Engenharia de Dados**, **BI** e **IA**
-- 🛠️ Desenvolvendo meu portfólio com projetos que conectam dados, automação e problemas reais
-
----
-
 ## 🛠️ Tech Stack
 
 <div align="center">
