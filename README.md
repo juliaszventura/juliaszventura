@@ -59,11 +59,12 @@ Atualmente aprofundando conhecimentos em **Análise de Dados**, **Business Intel
 
 ## 💼 Experiência
  
-**Estagiária de Banco de Dados · VT Real** *(Nov/2025 – Presente)*
+**Estagiária de Banco de Dados e QA · VT Real** *(Nov/2025 – Jul/2026)*
 - Atualização e manutenção de banco de dados com foco em integridade e qualidade dos dados
 - Consultas SQL para extração e análise de dados
 - Automação com Python para coleta de dados
 - Análise de dados no Excel, garantindo precisão entre as bases de informação
+- Execução de casos de teste (QA) e documentação de resultados no sistema
 
 **Estagiária de Suporte de Produto · Teknisa** *(Jun/2025 – Out/2025)*
 - Atendimento ao cliente via chat, e-mail e telefone com registro de chamados internos
@@ -79,7 +80,6 @@ Atualmente aprofundando conhecimentos em **Análise de Dados**, **Business Intel
 - 🌎 **Language Exchange International** — Florida, USA *(Mar/2023 – Mai/2024)*
 - 🐧 **[Red Hat System Administration I (RH124 - RHA) Ver. 9.3](https://www.credly.com/badges/c847191f-aa2c-45d4-ae2c-e1e6946ff314)** — Red Hat *(Out/2025)*
 - ☁️ **[AWS Academy Graduate — Cloud Foundations](https://www.credly.com/badges/2969191c-c539-4557-b5c9-d79acee15d71/print)** — Amazon Web Services *(Ago/2025)*
-- 🤖 **Google Cloud Data Analytics** — Google Skills *(em andamento)*
 ---
 
 ## 📊 Stats
